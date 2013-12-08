@@ -1,6 +1,6 @@
 <?php
 session_start();
-// unset($_SESSION);
+
 
 ?>
 <!doctype html>
@@ -8,6 +8,25 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<title>PHP(advanced) Basic</title>
+	<style type="text/css">
+	.box{
+		border:1px solid black;
+		height:300px;
+		width:300px;
+		padding:20px;
+
+	}
+	.result_box{
+		position:relative;
+		top:-33px;
+		left:25px;
+		background:white;
+		width:40px;
+
+
+	}
+
+	</style>
 </head>
 <body>
 	<form action="process.php" method="post">
@@ -31,8 +50,11 @@ session_start();
 	<div>
 		<input class="enter" type="submit" value="Enter">
 	</div>
-	<div class= "result_box">Result</div>
-	<div>
+	<br>
+	<br>
+
+	<div class= "box">	
+		<div class= "result_box">Result</div>
 	<?php
 	
 	if(isset($_SESSION['month']))
