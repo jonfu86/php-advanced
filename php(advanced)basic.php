@@ -31,7 +31,7 @@ session_start();
 <body>
 	<form action="process.php" method="post">
 	<input type="hidden" name="action" value="month">
-	<label for="month">Choose a month: </label>
+	<label>Choose a month: </label>
 	<select name ="month">
 	<?php
 
